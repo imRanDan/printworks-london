@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  color: white;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  font-size: 16px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1.5rem;
+  flex-flow: row wrap;
+
+  align-items: center;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  /* border: 1px dotted red; */
+}
+
+.leftnav {
+  order: 1;
+}
+
+.logo {
+  order: 2;
+  margin: 0 auto;
+
+}
+
+.logo img {
+  width: 300px;
+}
+
+.rightnav {
+  order: 3;
+  margin-right: 20px;
+}
+
+.rightnav:hover {
+  text-decoration: underline;
+}
+
+.shop {
+  border: 1px solid white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.hidden {
+  color: black;
+  cursor:default;
+}
+
+
+
+
+/* Main */
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+}
+
+#carousel {
+
+}
+
+.carousel img {
+
+}
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
