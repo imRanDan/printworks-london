@@ -81,6 +81,15 @@ main {
   align-items: center;
 }
 
+.typewriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  flex-direction: column;
+}
+
 
 .typewriter h1 {
   font-family: 'Roboto Mono', monospace;
@@ -93,24 +102,40 @@ main {
   animation:
     typing 3.5s steps(16, end),
     blink-caret .75s step-end infinite;
+    
 }
 
 .typewriter h2 {
+  position: relative;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   overflow: hidden;
-  border-right: .15em solid grey;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(18, end),
-    blink-caret .75s step-end infinite;
-}
+  opacity: 0;
+  
+  animation: 
+    typing 5s steps(21, end),
+    fadeIn 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  }
+
 
 @keyframes typing {
   from {width: 0}
   to { width: 100% }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @keyframes blink-caret {
