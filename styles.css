@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   color: white;
@@ -77,8 +81,46 @@ main {
   align-items: center;
 }
 
-main h2 {
+
+.typewriter h1 {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-right: .15em solid grey;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(16, end),
+    blink-caret .75s step-end infinite;
 }
+
+.typewriter h2 {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-right: .15em solid grey;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(18, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% { border-color: transparent; }
+}
+
+
+
+/* Carousel */
 
 #carousel {
 
