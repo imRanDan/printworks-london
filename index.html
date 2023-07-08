@@ -16,50 +16,24 @@
 </head>
 <body>
   <header>
+    <nav class="side-nav">
+      <a href="#" class="close-btn">x</a>
+      <a href="#">yoyooy</a>
+      <a href="#">reeeee</a>
+    </nav>
+
     <div class="topnav">
       <ul>
         <li class="logo"><img src="/images/printworks-logo.png"></li>
-        <li class="leftnav"><a onclick="openNav" href="#">Menu</a></li>
+        <button class="open-btn">☰</button>
+        <li class="leftnav"><a onclick="openNav()" href="#">Menu</a></li>
         <li class="leftnav"><a class="hidden" href="#">hidden link lul</a></li>
         <li class="rightnav"><a class="shop" href="#">Shop</a></li>
         <li class="rightnav"><a href="#">Hire</a></li>
       </ul>
     </div>	
 
-    <div id="overlayNav" class="overlay">
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <nav class="navbar-menu-content">
-        <div class="prim-links">
-          <a>Shop</a>
-          <a>What's On</a>
-          <a>News</a>
-          <a>Info</a>
-          <a>Hire</a>
-          <a>Gallery</a>
-        </div>
-  
-        <ul class="sec-links">
-          <li>About</li>
-          <li>FAQs</li>
-          <li>Getting Here</li>
-          <li>Careers</li>
-          <li>Accommodation</li>
-          <li>Contact</li>
-          <li>Partners</li>
-        </ul>
-  
-        <p>Subscribe to Printworks' Mailing List for show announcements & more - you can unsubscribe at any time. To find out more about Broadwick Entertainment LTD and how we use your information, please see our <a>Privacy & Cookies Policy.</a></p>
-  
-        <form class="nav-form" action="#">
-          <input type="text">
-          <button>Sign Up</button>
-        </form>
-      </nav>
-
-      <span onclick="openNav()">open</span>
-    </div>
     
   </header>
 

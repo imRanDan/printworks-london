@@ -1,7 +1,11 @@
-function openNav() {
-  document.getElementById("overlayNav").style.width = "100%";
-}
+let open = document.querySelector(".open-btn")
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+let close = document.querySelector(".close-btn")
+
+open.addEventListener("click", () => {
+  document.querySelector(".side-nav").style.width = "100%";
+})
+
+close.addEventListener("click", () => {
+  document.querySelector('.side-nav').style.width = "0%";
+})
