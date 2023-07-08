@@ -72,7 +72,7 @@ ul a {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: grey;
+  background-color: black;
   overflow-x: hidden;
   padding-top: 60px;
 }
@@ -82,12 +82,36 @@ ul a {
   justify-content: center;
   align-items: first baseline;
   padding-left: 2.5em;
+  padding-top: 2em;
 
   flex-direction: column;
 }
 
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.25rem;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .side-nav a:hover {
-  color: red;
+  text-decoration: underline;
+}
+
+.mini-side-nav-content {
+  position: relative;
+  bottom: 29em;
+  left: 20em;
+  flex-direction: column;
+
+  display: flex;
+}
+
+.mini-side-nav-content a {
+  font-size: 1.125rem;
+  cursor: pointer;
 }
 
 .side-nav .close-btn {
@@ -96,6 +120,8 @@ ul a {
   left: 0;
   font-size: 30px;
   margin-left: 50px;
+
+  text-decoration: none;
 }
 
 .sidenav a {
@@ -111,8 +137,9 @@ ul a {
 
 button {
   padding: 5px 10px;
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
   border: none;
   border-radius: 2px;
 }
@@ -121,6 +148,7 @@ button {
   padding: 5px 10px;
   text-decoration: none;
 }
+
 
 
 
