@@ -80,7 +80,8 @@ ul a {
 .side-nav-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: first baseline;
+  padding-left: 2.5em;
 
   flex-direction: column;
 }
