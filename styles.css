@@ -75,7 +75,14 @@ ul a {
   background-color: grey;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+}
+
+.side-nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
 }
 
 .side-nav a:hover {
@@ -107,6 +114,11 @@ button {
   color: black;
   border: none;
   border-radius: 2px;
+}
+
+.close-btn {
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 
