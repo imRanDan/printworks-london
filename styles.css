@@ -6,7 +6,8 @@ body {
   background-color: black;
   color: white;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
 }
 
 .topnav {
@@ -51,7 +52,7 @@ ul a {
   text-decoration: underline;
 }
 
-.shop {
+.shop-link {
   border: 1px solid white;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -102,10 +103,11 @@ ul a {
 
 .mini-side-nav-content {
   position: relative;
-  bottom: 29em;
+  bottom: 26em;
   left: 20em;
   flex-direction: column;
 
+  font-weight: 300;
   display: flex;
 }
 
@@ -150,7 +152,40 @@ button {
 }
 
 
+.underline {
+  text-decoration: underline;
+}
 
+.nav-form {
+  margin-top: -15em;
+  margin-left: 4em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-form p {
+  display: inline-block;
+  max-width: 45%;
+  line-height: 1.5;
+  font-size: 1.215rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sign-up input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+}
 
 
 /* Main */
