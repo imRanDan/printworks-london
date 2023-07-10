@@ -264,21 +264,49 @@ main {
 /* Carousel */
 
 #carousel {
-
+  background-color: #EEE;
 }
 
 .carousel img {
-
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  max-width: none;
 }
 
 .carousel {
+  padding-top: 6em;
   background: #EEE;
+  height: max-content;
+  min-height: 100vh;
 }
 
 .carousel-cell {
-  width: 50%;
-  height: 300px;
-  margin-right: 10px;
+  width: 75%;
+  height: 720px;
+  margin-right: 15px;
   border-radius: 5px;
-  counter-increment: gallery-cell;
+}
+
+.flickity-page-dots {
+  visibility: hidden;
+}
+
+/* News */
+
+.news {
+  background-color: #EEE;
+  color: black;
+
+
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news-header button {
+  border: 1px solid black;
+  color: black;
 }
