@@ -1,9 +1,10 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  background-color: black;
+  background-color: white;
   color: white;
 
   font-family: 'Roboto', sans-serif;
@@ -14,6 +15,7 @@ body {
 
 .topnav {
   font-size: 16px;
+  background-color: black;
 }
 
 ul {
@@ -197,6 +199,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: black;
 }
 
 .typewriter {
@@ -363,6 +367,7 @@ main {
 }
 
 .news-content {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -381,35 +386,85 @@ main {
   letter-spacing: -1px;
 }
 
+.news-article p {
+  width: 79%;
+  line-height: 1.4em;
+  font-size: 1.215rem;
+}
+
 .hire {
   background-color: white;
   color: black;
-  /* padding: 3em 4em; */
+  margin-top: 5em;
+  margin-bottom: 0;
+}
+
+.hire-container {
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.hire-left {
+  float: left;
+  width: 50%;
 
   display: flex;
 
-  flex-direction: row;
-  
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-left img {
+  width: 800px;
 
 }
 
+.hire-right {
+  width: 50%;
+  float: right;
 
-.hire img {
-  width: 100%;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
 }
 
-.hire-info {
-  /* margin-left: 5em;
-  padding: 2em; */
+.hire-right p {
+  max-width: 70%;
+  font-size: 1.215rem;
 }
 
-.hire-info h2 {
+.hire-right button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.75rem 2rem;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  font-weight: 600;
 }
 
-.hire-info p {
-  width: 80%;
-  font-weight: 300;
+.printworks-banner {
+  background-image: url(./images/image-banner.png);
+  height: 500px;
+
+  margin-top: 0;
+}
+
+/* Printworks Info */
+
+.printworks-info {
+  margin-top: 4em;
+
+}
+
+.printworks-contact {
+  color: black;
+}
+
+.printworks-location {
+
+}
+
+/* Footer  */
+
+footer {
+
 }
