@@ -348,7 +348,7 @@ main {
 .news-articles {
   display: flex;
   flex-direction: row;
-
+  width: 100%;
 }
 
 .news-article {
