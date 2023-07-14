@@ -473,6 +473,22 @@ main {
 
 }
 
+/* Partners */
+
+.our-partners {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-square {
+}
+
+.partner-img {
+  width: 100px;
+}
+
 /* Footer  */
 
 footer {
