@@ -13,6 +13,14 @@ body {
   max-width: 100%;
 }
 
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 .topnav {
   font-size: 16px;
   background-color: black;
@@ -439,15 +447,18 @@ main {
   font-size: 1.215rem;
   font-weight: 300;
 
-  padding: 1em 0;
+  padding-top: 1em;
 }
 
 .hire-btn {
+  margin-top: 1em;
+
   background-color: white;
   border: 1px solid black;
-  padding: 0.75rem 2rem;
+  padding: 0.95rem 2rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .hire-btn:hover {
@@ -471,18 +482,40 @@ main {
   display: flex;
   
   justify-content: space-around;
+
+  min-height:600px;
 }
 
 .printworks-contact {
   color: black;
-
 }
 
 .printworks-contact h2 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
 
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+.printworks-contact p {
+  padding: 0.4em 0;
+  font-weight: 300;
+}
+
+.printworks-contact-btn {
+  border: 1px solid black;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 1.2em 2em;
+
+  font-size: 16px;
+}
+
+.printworks-contact-btn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }
 
 .printworks-location {
@@ -492,11 +525,17 @@ main {
 /* Partners */
 
 .our-partners {
+  padding-top: 2em;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.our-partners h2 {
+  text-transform:  uppercase;
+  font-family: 'Anton', sans-serif;
 }
 
 .partner-row {
@@ -506,7 +545,7 @@ main {
 }
 
 .partner-square {
-  padding: 4em;
+  padding: 1.5em 4em;
 }
 
 .partner-img {
