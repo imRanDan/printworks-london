@@ -16,6 +16,7 @@ body {
 .topnav {
   font-size: 16px;
   background-color: black;
+  padding-top: 1em;
 }
 
 ul {
@@ -270,7 +271,7 @@ main {
 /* Carousel */
 
 #carousel {
-  background-color: #EEE;
+  background-color: white;
 }
 
 .carousel img {
@@ -282,7 +283,7 @@ main {
 
 .carousel {
   padding-top: 6em;
-  background: #EEE;
+  background: white;
   height: max-content;
   min-height: 100vh;
 }
@@ -303,8 +304,7 @@ main {
 .news {
   background-color: white;
   color: black;
-  padding-left: 2em;
-  padding-right: 2em;
+
 }
 
 .news-header {
@@ -312,14 +312,17 @@ main {
   align-items: center;
 
   justify-content: space-between;
+
+  padding: 2em 0;
 }
 
 .news-header h2 {
   font-family: 'Anton', sans-serif;
-  font-weight: 800;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 38px;
   text-transform: uppercase;
 
+  margin-left: 2.5em;
 
 }
 
@@ -330,7 +333,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   padding: 15px 24px;
-
+  margin-right: 8em;
 }
 
 .news-header-btn:hover {
@@ -342,32 +345,37 @@ main {
 .news-articles {
   display: flex;
   flex-direction: row;
-  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 20px;
+  padding-left: 20px;
+
 }
 
 .news-article {
-  width: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+  width: 33%;
   padding: 0 1em;
+  
 }
 
 .news-article img {
-  object-fit: cover;
-  width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 
 .news-content {
-  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
 
 .news-article span {
-  padding-top: 1em;
   text-transform: uppercase;
 }
 
@@ -381,9 +389,7 @@ main {
 }
 
 .news-article p {
-  width: 79%;
-  line-height: 1.4em;
-  font-size: 1.215rem;
+  font-size: 18px;
 }
 
 .hire {
