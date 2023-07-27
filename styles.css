@@ -647,7 +647,7 @@ footer {
   float: left;
 
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .footer-left a {
@@ -664,7 +664,7 @@ footer {
 .footer-right {
   width: 50%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin-right: 3em;
 
   float: right;
@@ -681,15 +681,21 @@ footer {
 }
 
 .acknowledgements-container {
-  clear: both;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: right;
 }
 
 .acknowledgements {
   font-weight: 300;
   font-size: 14px;
 
-  text-align: right;
-  margin-right: 5em;
+  margin-right: 12em;
+
 }
 
 .acknowledgements a {
