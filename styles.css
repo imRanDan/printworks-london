@@ -639,16 +639,15 @@ footer {
   padding-top: 2em;
   background-color: black;
 
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-around;
 }
 
 .footer-left {
   width: 50%;
+  clear: both;
+  float: left;
+
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .footer-left a {
@@ -665,14 +664,34 @@ footer {
 .footer-right {
   width: 50%;
   display: flex;
+  justify-content: right;
+  margin-right: 3em;
 
-  justify-content: center;
+  float: right;
+  clear: both;
 }
 
 .footer-logo-square {
-  width: 20%;
+  width: 15%;
+  margin: 0 2em;
 }
 
 .footer-img {
   max-width: 100%;
+}
+
+.acknowledgements-container {
+  clear: both;
+}
+
+.acknowledgements {
+  font-weight: 300;
+  font-size: 14px;
+
+  text-align: right;
+  margin-right: 5em;
+}
+
+.acknowledgements a {
+  color: white;
 }
