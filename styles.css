@@ -708,7 +708,23 @@ footer {
 
 /* Styles for mobile */
 @media (max-width: 767px) {
-  /* mobile styles go here */
+  .printworks-info {
+    display: block;
+  }
+
+  .printworks-location {
+    max-width: 100%;
+    display:block;
+    position: relative;
+  }
+
+ .partner-row {
+  display: block;
+ }
+
+ .partner-square {
+  flex: 1 0 18%;
+ }
 }
 
 /* Styles for tablet */
@@ -727,7 +743,4 @@ footer {
     max-width: 100%;
   }
 
-  carousel img {
-
-  }
 }
