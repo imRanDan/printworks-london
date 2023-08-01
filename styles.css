@@ -548,6 +548,7 @@ main {
 
 .partner-square {
   padding: 2em;
+  margin: 0 1.5em;
 }
 
 .partner-img {
@@ -701,6 +702,18 @@ footer {
 
 /* Styles for mobile */
 @media (max-width: 767px) {
+
+  .news-articles {
+    flex-direction: column;
+    margin: 1em 0;
+  }
+
+  .news-article {
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+
   .printworks-info {
     display: block;
   }
@@ -715,16 +728,26 @@ footer {
   display: block;
  }
 
- .partner-square {
-  flex: 1 0 18%;
- }
 }
 
 /* Styles for tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* tablet styles go here */
-}
+  .news-articles {
+    flex-direction: column;
+    margin: 1em 0;
+  }
 
+  .news-article {
+    max-width: 100%;
+    margin: 1em 0;
+  }
+
+  .partner-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Styles for desktop */
 @media (min-width: 1025px) {
   /* desktop styles go here */
