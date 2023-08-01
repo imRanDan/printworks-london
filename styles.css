@@ -638,15 +638,18 @@ main {
 
 footer {
   border-top: 1px solid white;
-  padding-top: 2em;
+  padding: 2em 0;
   background-color: black;
 
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .footer-left {
   max-width: 50%;
-  clear: both;
-  float: left;
 
   display: flex;
   justify-content: center;
@@ -665,37 +668,27 @@ footer {
 
 .footer-right {
   max-width: 50%;
+
   display: flex;
   justify-content: center;
-  margin-right: 3em;
 
-  float: right;
-  clear: both;
 }
 
 .footer-logo-square {
-  max-width: 15%;
-  margin: 0 2em;
+  max-width: 150px;
+  margin: 0 0.5em;
 }
 
 .footer-img {
   max-width: 100%;
 }
 
-.acknowledgements-container {
-  max-width: 100%;
-
- 
-  justify-content: center;
-
-}
 
 .acknowledgements {
   font-weight: 300;
   font-size: 14px;
 
-  margin-right: 12em;
-
+  text-align: right;
 }
 
 .acknowledgements a {
