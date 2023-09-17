@@ -1,6 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -9,23 +10,21 @@ body {
   color: white;
 
 
-  max-width: 100%;
-  overflow-x: hidden;
 
   font-family: 'Roboto', sans-serif;
   /* font-family: 'Roboto Mono', monospace; */
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .topnav {
-  font-size: 16px;
+  font-size: 1rem;
   background-color: black;
   padding-top: 1em;
 }
@@ -34,7 +33,6 @@ ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  gap: 1.5rem;
   flex-flow: row wrap;
 
   align-items: center;
@@ -56,12 +54,12 @@ ul a {
 }
 
 .logo img {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .rightnav {
   order: 3;
-  margin-right: 20px;
+  margin-right: 1.25em;
 }
 
 .rightnav:hover {
@@ -70,10 +68,7 @@ ul a {
 
 .shop-link {
   border: 1px solid white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0.5em 1.25em;
 }
 
 
@@ -91,7 +86,7 @@ ul a {
   left: 0;
   background-color: black;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 3.75em;
 }
 
 .side-nav-content {
@@ -136,16 +131,16 @@ ul a {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 30px;
-  margin-left: 50px;
+  font-size: 1.875rem;
+  margin-left: 3.125em;
 
   text-decoration: none;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0.5em 0.5em 0.5em 2em;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.56rem;
   color: red;
   font-family: inherit;
   display: block;
@@ -154,16 +149,16 @@ ul a {
 }
 
 .open-btn {
-  padding: 5px 10px;
+  padding: 0.3125em 0.625em;
   background-color: transparent;
   color: white;
-  font-size: 22px;
+  font-size: 1.375rem;
   border: none;
   border-radius: 2px;
 }
 
 .close-btn {
-  padding: 5px 10px;
+  padding: 0.3125em 0.625em;
   text-decoration: none;
 }
 
@@ -181,47 +176,30 @@ ul a {
 }
 
 .nav-form p {
-  display: inline-block;
-  max-width: 45%;
-  line-height: 1.5;
+  line-height: 2;
   font-size: 1.215rem;
   text-align: center;
-  font-weight: 300;
+  padding: 0.25em;
 }
-
-.sign-up {
-  display: flex;
-  flex-direction: column;
-  align-items: first baseline;
-  max-width: 100%;
-}
-
-.sign-up input {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid grey;
-}
-
 
 /* Main */
 
 main {
   height: 100vh;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: black;
 }
 
-.typewriter {
+ .typewriter {
   display: flex;
   justify-content: center;
   align-items: center;
 
   text-align: center;
   flex-direction: column;
+  
 }
 
 
@@ -231,7 +209,6 @@ main {
   overflow: hidden;
   border-right: .15em solid grey;
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: .15em;
   animation:
     typing 2.5s steps(4, end),
@@ -245,7 +222,6 @@ main {
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: .15em;
   opacity: 0;
   
@@ -275,7 +251,7 @@ main {
 @keyframes blink-caret {
   from, to {border-color: transparent}
   50% { border-color: transparent; }
-}
+} */
 
 
 
@@ -286,7 +262,8 @@ main {
 }
 
 .carousel img {
-  max-width: 100%;
+  width: 100%;
+
   height: 100%;
   object-fit: cover;
 }
@@ -294,14 +271,10 @@ main {
 .carousel {
   padding-top: 6em;
   background: white;
-  height: max-content;
-  min-height: 100vh;
 }
 
 .carousel-cell {
-  max-width: 75%;
-  height: 720px;
-  margin-right: 15px;
+  margin: 0 0.9375em;
   border-radius: 5px;
 }
 
@@ -318,11 +291,9 @@ main {
 
 .news-header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
 
-  justify-content: space-between;
-
-  padding: 2em 0;
 }
 
 .news-header h2 {
@@ -330,8 +301,7 @@ main {
   font-weight: 400;
   font-size: 38px;
   text-transform: uppercase;
-
-  margin-left: 2.5em;
+  
 
 }
 
@@ -340,9 +310,9 @@ main {
   background-color: transparent;
   color: black;
   font-weight: 500;
-  font-size: 16px;
-  padding: 15px 24px;
-  margin-right: 8em;
+  font-size: 1rem;
+  padding: 0.9375em 1.5em;
+  width: 100%;
 }
 
 .news-header-btn:hover {
@@ -353,14 +323,10 @@ main {
 
 .news-articles {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   align-items: center;
   justify-content: center;
-
-  padding-right: 20px;
-  padding-left: 20px;
-
 }
 
 .news-article {
@@ -368,14 +334,13 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  max-width: 33%;
+  text-align: center;
   padding: 0 1em;
-  
 }
 
 .news-article img {
-  max-width: 100%;
+  max-width: 550px;
+  width: 100%;
   height: auto;
 }
 
@@ -407,48 +372,35 @@ main {
   color: black;
   margin-top: 5em;
   margin-bottom: 0;
-}
-
-.hire-container {
-  min-height: 600px;
-  margin: 0 auto;
-}
-
-.hire-left {
-  float: left;
-  max-width: 50%;
-
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.hire-left img {
-  max-width: 80%;
-
-}
-
-.hire-right {
-  max-width: 50%;
-  float: right;
 
   display: flex;
   flex-direction: column;
-  align-items: first baseline;
+}
+
+
+.hire-left {
+
+}
+
+.hire-left img {
+  width: 100%;
+  max-width: 550px;
+}
+
+.hire-right {
+  text-align: center;
 }
 
 .hire-right h2 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .hire-right p {
-  max-width: 68%;
   font-size: 1.215rem;
   font-weight: 300;
-
+  line-height: 1.5;
   padding-top: 1em;
 }
 
@@ -461,6 +413,8 @@ main {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
+
+  margin-bottom: 1em;
 }
 
 .hire-btn:hover {
@@ -520,8 +474,8 @@ main {
   cursor: pointer;
 }
 
-.printworks-location {
-
+.printworks-location iframe {
+  width: 100%;
 }
 
 /* Partners */
