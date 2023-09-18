@@ -176,7 +176,7 @@ ul a {
 }
 
 .nav-form p {
-  line-height: 2;
+  line-height: 1.5;
   font-size: 1.215rem;
   text-align: center;
   padding: 0.25em;
@@ -203,7 +203,7 @@ main {
 }
 
 
-.typewriter h1 {
+/* .typewriter h1 {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   overflow: hidden;
@@ -251,8 +251,13 @@ main {
 @keyframes blink-caret {
   from, to {border-color: transparent}
   50% { border-color: transparent; }
-} */
+}  */
 
+/* Container */
+  .container {
+    padding: 0 1em;
+  }
+/* end of cotnainer */
 
 
 /* Carousel */
@@ -299,7 +304,6 @@ main {
 .news-header h2 {
   font-family: 'Anton', sans-serif;
   font-weight: 400;
-  font-size: 38px;
   text-transform: uppercase;
   
 
@@ -335,7 +339,6 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 1em;
 }
 
 .news-article img {
@@ -378,9 +381,6 @@ main {
 }
 
 
-.hire-left {
-
-}
 
 .hire-left img {
   width: 100%;
@@ -394,7 +394,6 @@ main {
 .hire-right h2 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
 }
 
 .hire-right p {
@@ -449,8 +448,6 @@ main {
 .printworks-contact h2 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-
-  font-size: 2em;
 }
 
 .printworks-contact p {
@@ -487,17 +484,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 0 1 auto;
+
+  text-align: center;
 }
 
 .our-partners h2 {
   text-transform:  uppercase;
   font-family: 'Anton', sans-serif;
-}
-
-.partner-row {
-  display: flex;
-
-  align-items: center;
 }
 
 .partner-square {
@@ -507,6 +501,7 @@ main {
 
 .partner-img {
   max-width: 100px;
+  width: 100%
 }
 
 .partners-btn {
@@ -516,6 +511,8 @@ main {
   padding: 1em 2em;
   font-size: 1em;
   margin: 4em 0;
+
+  width: 100%;
 }
 
 .partners-btn:hover {
@@ -544,8 +541,6 @@ main {
   margin-top: 2em;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-
-  font-size: 2em;
 }
 
 .newsletter-list p {
@@ -591,11 +586,12 @@ main {
 
 /* Footer  */
 
-footer {
+footer .container{
   border-top: 1px solid white;
   padding: 2em 0;
   background-color: black;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-top {
@@ -606,8 +602,6 @@ footer {
 .footer-left {
   max-width: 50%;
 
-  display: flex;
-  justify-content: center;
 }
 
 .footer-left a {
@@ -622,12 +616,9 @@ footer {
 }
 
 .footer-right {
-  max-width: 50%;
-
-  display: flex;
-  justify-content: center;
 
 }
+
 
 .footer-logo-square {
   max-width: 150px;
@@ -635,7 +626,7 @@ footer {
 }
 
 .footer-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 
@@ -651,66 +642,4 @@ footer {
 }
 
 
-/* Media Queries */
 
-
-/* Styles for mobile */
-@media (max-width: 767px) {
-
-  .news-articles {
-    flex-direction: column;
-    margin: 1em 0;
-  }
-
-  .news-article {
-    max-width: 100%;
-    margin: 1em 0;
-  }
-
-
-  .printworks-info {
-    display: block;
-  }
-
-  .printworks-location {
-    max-width: 100%;
-    display:block;
-    position: relative;
-  }
-
- .partner-row {
-  display: block;
- }
-
-}
-
-/* Styles for tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* tablet styles go here */
-  .news-articles {
-    flex-direction: column;
-    margin: 1em 0;
-  }
-
-  .news-article {
-    max-width: 100%;
-    margin: 1em 0;
-  }
-
-  .partner-row {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* Styles for desktop */
-@media (min-width: 1025px) {
-  /* desktop styles go here */
-  section {
-    max-width: 100%;
-  }
-
-  carousel {
-    max-width: 100%;
-  }
-
-}
