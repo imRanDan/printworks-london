@@ -4,7 +4,7 @@ A cloned version of the Legendary Printworks London website.
 # printworks-london
 A frontend project of the Legendary Printworks London website.
 
-**Link to project:** [https://imrandan.github.io/toronto-stargazer-nasa-api/](https://printworks-london-clone.netlify.app/)
+**Link to project:** https://printworks-london-clone.netlify.app/
 
 ## How It's Made:
 
